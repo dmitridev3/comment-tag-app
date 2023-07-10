@@ -1,0 +1,13 @@
+<ul class="mention-list">
+  <li
+    class="mention-item"
+    *ngFor="let user of users; let i = index"
+    (click)="selectUser()"
+    (mouseenter)="onMouseEnter(i)"
+    (mouseleave)="onMouseLeave()"
+    [attr.data-user-id]="user.userID"
+    [class.selected]="i === selectedIndex"
+  >
+    {{ user.name }}
+  </li>
+</ul>

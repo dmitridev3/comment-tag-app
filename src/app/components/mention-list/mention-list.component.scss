@@ -1,0 +1,23 @@
+.mention-list {
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  position: absolute;
+  max-height: 200px; // Adjust this value based on the height of your individual list items
+  overflow-y: auto;
+}
+
+.mention-item {
+  cursor: pointer;
+  padding: 5px;
+  &:hover,
+  &.highlight {
+    background-color: #f0f0f0;
+  }
+}
+.mention-item.selected {
+  background-color: #f0f0f0;
+}

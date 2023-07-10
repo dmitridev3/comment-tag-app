@@ -1,0 +1,18 @@
+<div class="comment-box">
+  <h2>{{ task.title }}</h2>
+  <div class="comments">
+    <div class="comment" *ngFor="let comment of task.comments">
+      {{ comment.text }}
+    </div>
+  </div>
+  <div class="comment-input">
+    <textarea
+      appMention
+      [(ngModel)]="newCommentText"
+      (ngModelChange)="onCommentInputChange($event)"
+      placeholder="Add a comment..."
+      rows="3"
+    ></textarea>
+    <button (click)="addComment()">Add Comment</button>
+  </div>
+</div>

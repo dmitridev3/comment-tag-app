@@ -1,0 +1,43 @@
+.container {
+  margin-top: 2rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+ul {
+  position: absolute;
+  z-index: 1000;
+  list-style-type: none;
+  background-color: #fff;
+  padding: 0;
+  border: 1px solid #ccc;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
